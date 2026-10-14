@@ -6,11 +6,25 @@
 class Botao
 {
     private:
+        uint8_t _pinoBotao;
+        bool _estadoAtualBotao;
+        bool _estadoAnteriorBotao;
+        bool _pressionou;
+        bool _soltou;
 
+        
 
     public:
-        pressi
-}
+        Botao(uint8_t pino);
+
+        void iniciar();
+        void atualizar();
+        bool pressionou();
+        bool soltou();
+    
+
+
+};
 
 
 #endif
